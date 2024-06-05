@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Functional from './Components/Functional';
+import Class from './Components/Class';
+import Jsx from './Components/Jsx';
 
 function App() {
+  function Apple(){
+    return (<div>Apple component</div>)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello Harsh</h1>
+      {/* <Functional/>
+      <Class/>
+      <Apple/> */}
+      <Jsx/>
     </div>
   );
 }
+
 
 export default App;
